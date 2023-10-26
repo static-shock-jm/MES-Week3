@@ -736,8 +736,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
  800059a:	88fb      	ldrh	r3, [r7, #6]
  800059c:	2b01      	cmp	r3, #1
  800059e:	d104      	bne.n	80005aa <HAL_GPIO_EXTI_Callback+0x1a>
-		HAL_GPIO_TogglePin(LD6_GPIO_Port, LD6_Pin);
- 80005a0:	f44f 4100 	mov.w	r1, #32768	; 0x8000
+		HAL_GPIO_TogglePin(LD10_GPIO_Port, LD10_Pin);
+ 80005a0:	f44f 5100 	mov.w	r1, #8192	; 0x2000
  80005a4:	4803      	ldr	r0, [pc, #12]	; (80005b4 <HAL_GPIO_EXTI_Callback+0x24>)
  80005a6:	f000 fc97 	bl	8000ed8 <HAL_GPIO_TogglePin>
 	}
